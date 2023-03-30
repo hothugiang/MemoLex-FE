@@ -46,7 +46,7 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a href="index.html" class="active">Home</a></li>
-          <li class="dropdown"><a href="#"><span>Chủ đề</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          <li class="dropdown"><a href="#"><span>Topics</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
               <li><a href="#">Gia đình</a></li>
               <li><a href="#">Thể thao</a></li>
@@ -54,8 +54,8 @@
               <li><a href="#">Ẩm thực</a></li>
             </ul>
           </li>
-          <li><a href="index.html">Ôn tập</a></li>
-          <li><a class="login" href="index.html">Đăng nhập</a></li>
+          <li><a href="reviewlist.html">Review</a></li>
+          <li><a class="login" href="index.html">Login</a></li>
         </ul>
       </nav><!-- .navbar -->
 
@@ -70,11 +70,10 @@
             <div class="container d-flex flex-column justify-content-center align-items-center text-center position-relative">
               <img src="assets/img/hero-img.png" style="width: 40%; height: 40%;" class="img-fluid animated">
               <h2 data-aos="fade-up">Welcome to MemoLex</h2>
-              <p data-aos="fade-up" data-aos-delay="100">Trong một xã hội ngày càng toàn cầu hóa, 
-                việc bạn có thể nói được ngoại ngữ là một lợi thế. Hãy cùng MemoLex làm chủ tiếng Anh!</p>
+              <p data-aos="fade-up" data-aos-delay="100">In an increasingly globalized society, being able to speak a foreign language is an advantage. Let's master English together with MemoLex!</p>
     
-              <form action="#" class="form-search d-flex align-items-stretch mb-3" data-aos="fade-up" data-aos-delay="200">
-                  <input type="text" class="form-control" placeholder="Nhập từ cần tìm">
+              <form action="worddetail.html" class="form-search d-flex align-items-stretch mb-3" data-aos="fade-up" data-aos-delay="200">
+                  <input type="text" class="form-control" placeholder="Enter the word to search">
                   <button type="submit" class="btn btn-primary">Search</button>
               </form>
             </div>
@@ -96,30 +95,30 @@
             <img src="assets/img/logo edit.png" style="padding-left: 80px;" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 content order-last  order-lg-first">
-            <h3>Giới thiệu</h3>
+            <h3>Introduction</h3>
             <p>
-              Đã bao giờ bạn tự hỏi bản thân, tại sao tiếng Anh lại quan trọng đến vậy? Chúng ta đều biết rằng tiếng Anh được xem là ngôn ngữ toàn cầu. Có hàng trăm quốc gia đã và đang xem tiếng Anh như ngôn ngữ thứ hai của họ. Dưới đây là lý do:
+              Have you ever asked yourself why English is so important? We all know that English is considered the global language, with hundreds of countries having adopted it as their second language. Here are the reasons why:
             </p>
             <ul>
               <li data-aos="fade-up" data-aos-delay="100">
                 <i class="bi bi-lightbulb"></i>
                 <div>
-                  <h5>Tiếng Anh chính là cây cầu kết nối chúng ta với nền tri thức nhân loại</h5>
-                  <p>“Bạn sống một cuộc đời mới với mỗi ngôn ngữ mà bạn nói. Và nếu bạn chỉ nói một ngôn ngữ, bạn chỉ như sống một cuộc đời mà thôi” (Ngạn ngữ Pháp) </p>
+                  <h5>The English language is the bridge that connects us to the body of knowledge of humanity</h5>
+                  <p>"You live a new life for every language you speak. If you only know one language, you live only once." (French proverb) </p>
                 </div>
               </li>
               <li data-aos="fade-up" data-aos-delay="200">
                 <i class="bi bi-map"></i>
                 <div>
-                  <h5>Đi du lịch mọi nơi thật dễ dàng khi biết tiếng Anh</h5>
-                  <p>Tiếng Anh chính là trợ thủ đắc lực giúp chuyến đi của bạn dễ dàng, thuận lợi, thêm phần ý nghĩa và đáng nhớ. “Đừng để hạn chế về ngôn ngữ hạn chế tầm nhìn của bạn” (Ludwig Wittgenstein)</p>
+                  <h5>Traveling everywhere is so much easier when you know English</h5>
+                  <p>English is the powerful assistant that makes your trip easy, convenient, meaningful, and memorable. "The limits of my language means the limits of my world" (Ludwig Wittgenstein)</p>
                 </div>
               </li>
               <li data-aos="fade-up" data-aos-delay="300">
                 <i class="bi bi-award"></i>
                 <div>
-                  <h5>Học tiếng Anh giúp não bộ chúng ta phát triển</h5>
-                  <p>Theo như các kết quả nghiên cứu khoa học, những người nói nhiều hơn một thứ tiếng thường sẽ có trí nhớ tốt hơn, sáng tạo hơn và linh hoạt về mặt tinh thần hơn so với những người chỉ biết một ngôn ngữ</p>
+                  <h5>Learning English helps our brain to develop</h5>
+                  <p>According to scientific research, people who speak more than one language often have better memory, creativity, and mental flexibility compared to those who only know one language</p>
                 </div>
               </li>
             </ul>
@@ -136,15 +135,15 @@
         <div class="row gy-4">
 
           <div class="service-item text-center" data-aos="fade-up">
-            <h1>Các tính năng chính của MemoLex</h1>
+            <h1>MemoLex's main features</h1>
           </div>
 
           <div class="col-lg-6 col-md-6 service-item d-flex" data-aos="fade-up">
             <div class="icon flex-shrink-0"><i class="bi bi-search"></i></div>
             <div>
-              <h4 class="title">Tra cứu từ vựng</h4>
-              <p class="description">MemoLex cung cấp kho từ điển phong phú và đa dạng đáp ứng nhu cầu tra cứu nhanh và thuận tiện của người dùng Internet</p>
-              <a href="index.html" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
+              <h4 class="title">Look up vocabulary</h4>
+              <p class="description">MemoLex provides a rich and diverse dictionary repository that meets the quick and convenient lookup needs of Internet users</p>
+              <a href="#" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
           <!-- End Service Item -->
@@ -152,8 +151,8 @@
           <div class="col-lg-6 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
             <div class="icon flex-shrink-0"><i class="bi bi-book"></i></div>
             <div>
-              <h4 class="title">Ôn tập từ vựng</h4>
-              <p class="description">Cách đảm bảo nhất giúp bạn tăng khả năng ghi nhớ từ vựng, tăng khả năng sử dụng từ vựng và hạn chế quên từ mới là ôn luyện và sử dụng từ đã học thường xuyên</p>
+              <h4 class="title">Review vocabulary</h4>
+              <p class="description">The most effective way to improve your vocabulary retention, increase your ability to use new words, and reduce the likelihood of forgetting them is to practice and use the words regularly</p>
               <a href="index.html" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
             </div>
           </div><!-- End Service Item -->
@@ -169,9 +168,9 @@
 
         <div class="row justify-content-center">
           <div class="col-lg-8 text-center">
-            <h3>Ôn tập ngay</h3>
-            <p> Vậy còn chần chừ gì nữa mà không ôn lại các từ đã học cùng MemoLex?</p>
-            <a class="cta-btn" href="#">Ôn tập</a>
+            <h3>Review now</h3>
+            <p> So why hesitate any longer without reviewing the words you've learned with MemoLex?</p>
+            <a class="cta-btn" href="#">Review</a>
           </div>
         </div>
 
@@ -184,8 +183,8 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-          <span>Chủ đề nổi bật</span>
-          <h2>Chủ đề nổi bật</h2>
+          <span>Featured topics</span>
+          <h2>Featured topics</h2>
 
         </div>
 
@@ -196,8 +195,8 @@
               <div class="card-img">
                 <img src="assets/img/greetings.jpg" alt="" class="img-fluid">
               </div>
-              <h3><a href="index.html" class="stretched-link">Chào hỏi - Greetings</a></h3>
-              <p>Dù cơ bản nhưng cực kỳ quan trọng trong giao tiếp tiếng Anh. Không đơn giản là “Hi” hay “Hello”, giữa người với những mối quan hệ khác nhau chúng ta sẽ có cách chào hỏi riêng. Đây là bước giúp người đối diện đánh giá và có ấn tượng tốt hay không về con người bạn.</p>
+              <h3><a href="topic.html" class="stretched-link">Greetings</a></h3>
+              <p>Although basic, greetings are extremely important in English communication. It's not just about saying 'Hi' or 'Hello', different types of relationships require different ways of greeting. This is a step that helps the person you're talking to evaluate and form a good impression of you</p>
             </div>
           </div><!-- End Card Item -->
 
@@ -206,8 +205,8 @@
               <div class="card-img">
                 <img src="assets/img/relationships.jpg" alt="" class="img-fluid">
               </div>
-              <h3><a href="index.html" class="stretched-link">Các mối quan hệ - Relationships</a></h3>
-              <p>Tất cả con người trong xã hội hiện nay đều liên kết với nhau bởi các mối quan hệ: bạn bè, người thân, người yêu, người xa lạ,… Chúng ta cần biết cách gọi tên và giao tiếp với những mối quan hệ này cho phù hợp và chuẩn nhất.</p>
+              <h3><a href="topic.html" class="stretched-link">Relationships</a></h3>
+              <p>All people in society today are connected to each other through relationships: friends, family, romantic partners, strangers, etc. We need to know how to address and communicate with these relationships appropriately and accurately</p>
             </div>
           </div><!-- End Card Item -->
 
@@ -216,8 +215,8 @@
               <div class="card-img">
                 <img src="assets/img/human.jpg" alt="" class="img-fluid">
               </div>
-              <h3><a href="index.html" class="stretched-link">Con người - Human</a></h3>
-              <p>Học mô tả người sẽ giúp bạn có thể sử dụng được trong nhiều tình huống, nhiều trường hợp. Khả năng giao tiếp nhờ vậy mà được cải thiện tốt hơn. Hãy lưu ý đến topic này nếu bạn đang tìm chủ để nâng cao từ vựng tiếng Anh cơ bản của mình nhé.</p>
+              <h3><a href="topic.html" class="stretched-link">Human</a></h3>
+              <p>Learning to describe people will help you use it in many situations and contexts. As a result, your communication skills will be improved significantly. Please note this topic if you are looking to improve your basic English vocabulary</p>
             </div>
           </div><!-- End Card Item -->
 
@@ -226,8 +225,8 @@
               <div class="card-img">
                 <img src="assets/img/direction.jpg" alt="" class="img-fluid">
               </div>
-              <h3><a href="index.html" class="stretched-link">Vị trí - Direction</a></h3>
-              <p>Chủ đề rất quan trọng với những ai muốn học tiếng Anh giao tiếp phục vụ mục đích du lịch. Bạn muốn nhận được sự hướng dẫn đến một vị trí khu vực nào đó, bạn phải sở hữu một lượng từ vựng nhất định để hỏi và hiểu câu trả lời của người bản xứ. Học cách mô tả vị trí bạn đang đứng cũng là cách nếu bạn cần sự giúp đỡ, cứu hộ khi đang ở nước ngoài.</p>
+              <h3><a href="topic.html" class="stretched-link">Direction</a></h3>
+              <p>The topic is very important for those who want to learn English for travel purposes. If you want to receive directions to a certain location, you need to have a certain amount of vocabulary to ask and understand the response of the native speaker. Learning how to describe your current location is also important if you need help or rescue while abroad</p>
             </div>
           </div><!-- End Card Item -->
 
@@ -236,8 +235,8 @@
               <div class="card-img">
                 <img src="assets/img/food.jpg" alt="" class="img-fluid">
               </div>
-              <h3><a href="index.html" class="stretched-link">Thức ăn - Food</a></h3>
-              <p>Trong chủ đề này, bạn cần học cách gọi tên một số món ăn cơ bản. Cùng với đó, các tính từ để mô tả hương vị cũng cần được nâng cao. Ngoài ra, từ vựng tiếng Anh về các nguyên vật liệu tạo nên món ấy cũng cần được học nếu bạn muốn đi chợ và tự nấu ăn tại một đất nước xa lạ. </p>
+              <h3><a href="topic.html" class="stretched-link">Food</a></h3>
+              <p>In this topic, you need to learn how to name some basic dishes in English. Along with that, the adjectives to describe the taste also need to be improved. In addition, English vocabulary about the ingredients that make up the dish is also needed to be learned if you want to go to the market and cook for yourself in a foreign country </p>
             </div>
           </div><!-- End Card Item -->
 
@@ -246,8 +245,8 @@
               <div class="card-img">
                 <img src="assets/img/shopping.jpg" alt="" class="img-fluid">
               </div>
-              <h3><a href="index.html" class="stretched-link">Mua sắm - Shopping</a></h3>
-              <p>Mua sắm cũng là chủ đề cần được đầu tư nếu muốn phát triển khả năng tiếng Anh cơ bản. Không chỉ để hỏi và trả giá sản phẩm, đây cũng là đề tài được các nàng yêu thích, thường xuyên nhắc tới trong câu chuyện thường ngày. Do đó, phát triển những từ vựng trong mua sắm sẽ giúp bạn tạo những đoạn hội thoại, sinh động và thú vị hơn.</p>
+              <h3><a href="topic.html" class="stretched-link">Shopping</a></h3>
+              <p>Shopping is also a topic that needs to be invested in if you want to develop your basic English language skills. It's not just about asking and bargaining for products, it's also a topic that girls love and often mention in everyday conversations. Therefore, developing vocabulary related to shopping will help you create more lively and interesting dialogues</p>
             </div>
           </div><!-- End Card Item -->
 
@@ -267,7 +266,7 @@
           <a href="index.html" class="logo d-flex align-items-center">
             <span>MemoLex</span>
           </a>
-          <p>Từ điển trực tuyến</p>
+          <p>Online dictionary</p>
           <div class="social-links d-flex mt-4">
             <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
             <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
@@ -280,8 +279,8 @@
           <h4>Useful Links</h4>
           <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#introduction">Giới thiệu</a></li>
-            <li><a href="#topic">Chủ đề nổi bật</a></li>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#topic">Featured topics</a></li>
           </ul>
         </div>
 
@@ -289,9 +288,9 @@
         <div class="col-lg-2 footer-contact text-center text-md-start">
           <h4>Contact Us</h4>
           <p>
-            144 Xuân Thuỷ <br>
-            Cầu Giấy, Hà Nội <br>
-            Việt Nam <br><br>
+            144 Xuan Thuy <br>
+            Cau Giay, Hanoi <br>
+            Vietnam <br><br>
             <strong>Phone:</strong> +84 xxx xxx xxx<br>
             <strong>Email:</strong> xxx@vnu.edu.vn<br>
           </p>
