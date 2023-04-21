@@ -45,17 +45,33 @@
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li class="dropdown"><a href="#"><span>Topics</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          <li><a href="index.html">Home</a></li>
+          <li class="dropdown"><a href="#"><span>Word list</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
-              <li><a href="topic.html">Gia đình</a></li>
-              <li><a href="topic.html">Thể thao</a></li>
-              <li><a href="topic.html">Con người</a></li>
-              <li><a href="topic.html">Ẩm thực</a></li>
+              <li><a href="listword.html">My list</a></li>
+              <li><a href="topic.html">Topic</a></li>
+              <li><a href="topic.html">Suggested</a></li> <!--Package admin create-->
             </ul>
           </li>
-          <li><a href="reviewlist.html">Review</a></li>
+          <li><a href="index.html">Review</a></li> <!--Review game-->
+          
+          <!-- After login -->
+          <!--{% if user.username %}
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Hello, {{user.username}}
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <a href="#profile" data-gallery="Portfolio" class="portfolio-lightbox preview-link"> Thông tin cá nhân</a>
+              </li>
+              <li><a class="dropdown-item" href="logout/">Đăng xuất</a></li>
+            </ul>
+          </li>
+          
+          {% else %} -->
           <li><a class="login" href="login.html">Login</a></li>
+          <!--{% endif %}-->
         </ul>
       </nav><!-- .navbar -->
 
@@ -251,7 +267,11 @@
           </div><!-- End Card Item -->
 
         </div>
-
+        
+        <div class="read-more">
+          <a href="topic.html" class="bi bi-arrow-right-circle-fill"> More topics</a>
+        </div>
+        
       </div>
     </section><!-- End Topics Section -->
 

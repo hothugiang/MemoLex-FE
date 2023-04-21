@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Word</title>
+  <title>Review</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -83,114 +83,100 @@
 
     </div>
   </header><!-- End Header -->
-  <!-- End Header -->
+    <!-- End Header -->
 
   <main id="main">
-    <!-- ======= Word detail ======= -->
-    <section id="word-detail" class="word-detail">
-        <div class="wrapper">
-          <div class = "word text-center"> 
-            <h1>Word<ion-icon name="volume-high-outline" style="cursor: pointer; size: 20px; padding-left: 7px;"></ion-icon></h1> 
-            <h5>Pronunciation</h5>
-            <h5>Word type</h5>
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="listword" class="listword">
+      <div class="container text-center">
+        
+        <h1>"Name of list"</h1>
+        <br>
+        
+        <br>
+          <!-- chia các cột -->
+        <table class="table-fill">
+          <colgroup>
+            <col width="100" >
+            <col width="150" >
+            <col width="150" >
+            <col width="600" >
+          </colgroup>
             
-            <!-- Popup -->
-            <button id="add-to-playlist" style="padding-right: 30px;"><i class="bi bi-plus-circle-fill"></i></button>
-              <div id="playlist-popup" class="popup">
-                <div class="popup-content">
-                  <div class="popup-header">
-                    <h3>Add to wordlist</h3>
-                    <button class="close-popup">&times;</button>
-                  </div>
-                  <div class="playlist-list">
-                    <div class="playlist-container">
-                      <label>
-                        <input type="checkbox" name="playlist" value="playlist1"> List 1
-                      </label><br>
-                      <label>
-                        <input type="checkbox" name="playlist" value="playlist2"> List 2
-                      </label><br>
-                      <label>
-                        <input type="checkbox" name="playlist" value="playlist3"> List 3
-                      </label><br>
+          <thead> 
+            <tr>
+              <th class="text-left"></th>
+              <th class="text-left">Word</th>
+              <th class="text-left">Type</th>
+              <th class="text-left">Meaning</th>
+            </tr>
+          </thead>
+
+          <tbody class="table-hover">
+
+            <tr>
+              <td class="text-left">
+                  <!-- Popup -->
+                  <button id="add-to-playlist"><i class="bi bi-plus-circle-fill"></i></button>
+                  <div id="playlist-popup" class="popup">
+                    <div class="popup-content">
+                      <div class="popup-header">
+                        <h3>Add to wordlist</h3>
+                        <button class="close-popup">&times;</button>
+                      </div>
+                      <div class="playlist-list">
+                        <div class="playlist-container">
+                          <label>
+                            <input type="checkbox" name="playlist" value="playlist1"> List 1
+                          </label><br>
+                          <label>
+                            <input type="checkbox" name="playlist" value="playlist2"> List 2
+                          </label><br>
+                          <label>
+                            <input type="checkbox" name="playlist" value="playlist3"> List 3
+                          </label><br>
+                        </div>
+                      </div>
+                      
+                      <div class="create-playlist">
+                        <h4>Create new word list</h4>
+                        <input type="text" id="new-playlist-name" placeholder="Name of new list" style="width: 200px;">
+                        <button id="create-playlist">Create</button>
+                      </div>
                     </div>
                   </div>
-                  
-                  <div class="create-playlist">
-                    <h4>Create new word list</h4>
-                    <input type="text" id="new-playlist-name" placeholder="Name of new list">
-                    <button id="create-playlist">Create</button>
-                  </div>
-                </div>
-              </div>
+              </td>
+              <td class="text-left" onclick="location.href='worddetail.html'" style="cursor: pointer;">memory</td>
+              <td class="text-left" onclick="location.href='worddetail.html'" style="cursor: pointer;">noun</td>
+              <td class="text-left" onclick="location.href='worddetail.html'" style="cursor: pointer;">the ability to remember information, experiences and people</td>
+            </tr>
 
+            <tr>
+              <td class="text-left">
+                <div>
+                  <!--Add to wordlist button--> 
+                <div>
+              </td>
+              <td class="text-left" onclick="location.href='worddetail.html'" style="cursor: pointer;">memorable</td>
+              <td class="text-left" onclick="location.href='worddetail.html'" style="cursor: pointer;">adjective</td>
+              <td class="text-left" onclick="location.href='worddetail.html'" style="cursor: pointer;">worth remembering or easily remembered, especially because of being special or unusual</td>
+            </tr>
 
+            <tr>
+              <td class="text-left">
+                <div>
+                  <!--Add to wordlist button-->    
+                <div>
+              </td>
+              <td class="text-left" onclick="location.href='worddetail.html'" style="cursor: pointer;">memorise</td>
+              <td class="text-left" onclick="location.href='worddetail.html'" style="cursor: pointer;">verb</td>
+              <td class="text-left" onclick="location.href='worddetail.html'" style="cursor: pointer;">to learn something so that you will remember it exactly</td>
+            </tr>
             
-          <!--- Meaning table-->
-          </div>
-          
-
-          <div class="word-infor" id="word-infor">
-            <table class="table-fill" style="margin-bottom: 30px;">
-              <colgroup>
-                <col width="300" >
-                <col width="300" >
-                <col width="300" >
-              </colgroup>
-                
-              <thead> 
-                <tr>
-                  <th class="text-left">Meaning</th>
-                  <th class="text-left">Example</th>
-                  <th class="text-left">Synonym</th>
-                </tr>
-              </thead>
-    
-              <tbody class="table-hover">
-                <tr>
-                  <td class="text-left">meaning 1</td>
-                  <td class="text-left">
-                    <ul>
-                      <li>example 1</li>
-                      <li>example 2</li>
-                    </ul>
-                  </td>
-                  <td class="text-left">
-                    <ul>
-                      <li><a href = "worddetail.html" style="color:#0055ff;">Synonym 1</a></li>
-                      <li><a href = "worddetail.html" style="color:#0055ff;">Synonym 2</a></li>
-                      <li><a href = "worddetail.html" style="color:#0055ff;">Synonym 1</a></li>
-                    </ul> 
-                  </td>
-                </tr>
-    
-                <tr>
-                  <td class="text-left">meaning 2</td>
-                  <td class="text-left">
-                    <ul>
-                      <li>example 1</li>
-                      <li>example 2</li>
-                    </ul>
-                  </td>
-                  <td class="text-left">
-                    <ul>
-                      <li><a href = "worddetail.html" style="color:#0055ff;">Synonym 1</a></li>
-                      <li><a href = "worddetail.html" style="color:#0055ff;">Synonym 2</a></li>
-                      <li><a href = "worddetail.html" style="color:#0055ff;">Synonym 1</a></li>
-                    </ul> 
-                  </td>
-                </tr>
-                
-              </tbody>
-            </table>
-          </div>
-            
-
-       </div>
-          
-
-
-    </section><!-- Word detail -->
+          </tbody>
+        </table>
+      </div>
+    </section><!-- End Breadcrumbs -->
   </main>
 
     
@@ -261,6 +247,4 @@
     <script src="assets/js/main.js"></script>
 
 </body>
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </html>
