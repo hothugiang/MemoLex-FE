@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Topic</title>
+  <title>My lists</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -17,6 +17,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
   <link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-+e1E4B4zPYXXZG9c9+z4BjSvUUvIr8hIP4bAXwjYKwPU6O+uV7xPJ6eXU6aJLr+2Iy7dD5a5N5OT5lqM3G+H3A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -54,7 +55,7 @@
           <li><a href="index.html">Home</a></li>
           <li class="dropdown"><a href="#"><span>Word list</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
-              <li><a href="listword.html">My list</a></li>
+              <li><a href="mylist.html">My list</a></li>
               <li><a href="topic.html">Topic</a></li>
               <li><a href="topic.html">Suggested</a></li> <!--Package admin create-->
             </ul>
@@ -89,33 +90,57 @@
     <!-- ======= Breadcrumbs ======= -->
     <section id="listword" class="listword">
       <div class="container text-center">
-        <div style="display:flex; justify-content: space-between; align-items: center;">
-            <button id="create-new-list">Create new list</button>
+          <h1 style="text-align: center; margin-bottom: 20px;">My word lists</h1>
 
-            <div id="popup" class="popup">
+          <button id="create-new-list">Create new list</button>
+          <div id="popup" class="popup">
             <div class="popup-content">
                 <div class="popup-header">
-                    <h3>Add to wordlist</h3>
+                    <h3>Create new wordlist</h3>
                     <button class="close-popup">&times;</button>
                 </div>
                 <input type="text" id="new-list-name" placeholder="List name">
+                <input type="text" id="new-list-name" placeholder="Description">
+                <br>
                 <button id="create-list">Create</button>
             </div>
-            </div>
-
-            <h1 style="margin-left: 150px">My word lists</h1>
-
-            <form action="index.html" method="GET"></form>
-                <button class="right-btn">Review</button>
-            </form>
-        </div>
-          
+          </div>
         
         <br>
 
         <!--Blocks of lists-->
 
-        
+        <section id="lists" class="topics pt-0">
+          <div class="container" data-aos="fade-up">
+
+            <div class="row gy-4">
+              <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="card">
+                  <div class = "delete">
+                    <i class="fas fa-trash"></i>
+                  </div>
+                  <h3><a href="userpackagedetail.html" class="stretched-link">List 1</a></h3>
+                  <h6>Description</h6>
+
+                  <div class="rating">
+                    <span class="star fas fa-star"></span>
+                    <span class="star fas fa-star"></span>
+                    <span class="star fas fa-star"></span>
+                  </div>
+
+                  <form action="index.html" method="GET"></form>
+                    <button class="right-btn">Review</button>
+                  </form>
+
+                </div>                
+                
+              </div><!-- End Card Item -->
+
+            </div>
+            
+
+          </div>
+        </section><!-- End Topics Section -->
           
         
       </div>
