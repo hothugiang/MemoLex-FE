@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Quizz</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/logo edit.png" rel="icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css'>
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+          <img src="assets/img/logo edit.png" alt=""> 
+          <h1>MemoLex</h1>
+      </a>
+
+      <form action="listword.html" class="form-search d-flex align-items-stretch mb-3">
+          <input type="text" class="form-control" placeholder="Enter the word to search">
+          <button type="submit" class="btn btn-primary">Search</button>
+      </form>
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="dropdown"><a href="#"><span>Word list</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="mylist.html">My list</a></li>
+              <li><a href="topic.html">Topic</a></li>
+              <li><a href="topic.html">Suggested</a></li> <!--Package admin create-->
+            </ul>
+          </li>
+          <li><a href="index.html">Review</a></li> <!--Review game-->
+          
+          <!-- After login -->
+          <!--{% if user.username %}
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Hello, {{user.username}}
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <a href="#profile" data-gallery="Portfolio" class="portfolio-lightbox preview-link"> Thông tin cá nhân</a>
+              </li>
+              <li><a class="dropdown-item" href="logout/">Đăng xuất</a></li>
+            </ul>
+          </li>
+          
+          {% else %} -->
+          <li><a class="login" href="login.html">Login</a></li>
+          <!--{% endif %}-->
+        </ul>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+  <!-- End Header -->
+
+  <main id="main">
+    <!-- ======= Word detail ======= -->
+    <section id="word-detail" class="word-detail">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!--QUESTION BLOCK-->
+                <div class="swiper-slide">
+                    <div class="quizz">
+                      <div class="word text-center">
+                          <h1>Question 1</h1>
+
+                          <p>Content of the question:</p>
+                          
+                          <!--Multiple choice
+
+                          <div class="answer-row">
+                            <div class="answer-col">
+                              <button id="answer-1">A. Answer 1</button>
+                              <button id="answer-2">B. Answer 2</button>
+                            </div>
+                            <div class="answer-col">
+                              <button id="answer-3">C. Answer 3</button>
+                              <button id="answer-4">D. Answer 4</button>
+                            </div>
+                          </div>
+
+                          -->
+                          
+                          <input class="type_answer" type="text" align="center" placeholder="Your answer:">
+
+                          <div class="submit-button" data-question="1" onclick="window.location.href='result.html'">Submit</div>
+                      </div>
+                    </div>
+                </div>
+                <!--End block-->
+
+                <div class="swiper-slide">
+                    <div class="quizz">
+                      <div class="word text-center">
+                          <h1>Question 2</h1>
+
+                          <p>Content of the question:</p>
+                          
+                          <div class="answer-row">
+                            <div class="answer-col">
+                              <button id="answer-1">A. Answer 1</button>
+                              <button id="answer-2">B. Answer 2</button>
+                            </div>
+                            <div class="answer-col">
+                              <button id="answer-3">C. Answer 3</button>
+                              <button id="answer-4">D. Answer 4</button>
+                            </div>
+                          </div>
+
+                          <div class="submit-button" data-question="2" onclick="window.location.href='result.html'">Submit</div>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="quizz">
+                      <div class="word text-center">
+                        <h1>Question 3</h1>
+
+                        <p>Content of the question:</p>
+                            
+                        <div class="answer-row">
+                          <div class="answer-col">
+                              <button id="answer-1">A. Answer 1</button>
+                              <button id="answer-2">B. Answer 2</button>
+                            </div>
+                            <div class="answer-col">
+                              <button id="answer-3">C. Answer 3</button>
+                              <button id="answer-4">D. Answer 4</button>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="submit-button" data-question="3" onclick="window.location.href='result.html'">Submit</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="exit" id="exit-btn">Exit</div>
+
+            <div id="exitPopup" class="popup">
+              <div class="popup-content">
+                  <h3 style="text-align: center;">Are you sure you want to exit? </h3>
+                  <div class="answer-btn">
+                    <button id="yes-btn" onclick="window.location.href='listword.html'">Yes</button>
+                    <button id="no-btn" class="no-btn">No</button>
+                  </div>
+              </div>
+            </div>
+
+
+        </div>
+
+
+    </section><!-- Quizz -->
+
+
+
+  </main>
+
+    
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-7 footer-info">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span>MemoLex</span>
+          </a>
+          <p>Online dictionary</p>
+          <div class="social-links d-flex mt-4">
+            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+          </ul>
+        </div>
+
+
+        <div class="col-lg-2 footer-contact text-center text-md-start">
+          <h4>Contact Us</h4>
+          <p>
+            144 Xuan Thuy <br>
+            Cau Giay, Hanoi <br>
+            Vietnam <br><br>
+            <strong>Phone:</strong> +84 xxx xxx xxx<br>
+            <strong>Email:</strong> xxx@vnu.edu.vn<br>
+          </p>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container mt-4">
+      <div class="copyright">
+        @INT 2208
+      </div>
+    </div>
+
+    </footer><!-- End Footer -->
+    <!-- End Footer -->
+
+    <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+          navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+          },
+      });
+
+      const submitButtons = document.querySelectorAll('.submit-button');
+
+      const numberOfQuestions = 3;  //change number of question
+
+      submitButtons.forEach((button) => {
+        const questionNumber = parseInt(button.getAttribute('data-question'));
+
+        if (questionNumber === numberOfQuestions) {
+          button.style.display = 'block';
+        } else {
+          button.style.display = 'none';
+        }
+      });
+
+
+      const buttons = document.querySelectorAll('button');
+
+      buttons.forEach(button => {
+        button.addEventListener('click', () => {
+          buttons.forEach(otherButton => otherButton.classList.remove('selected'));
+          button.classList.add('selected');
+          const selectedAnswer = button.id.replace('answer-', '');
+        });
+      });
+
+      //EXIT BUTTON
+      const exitButton = document.getElementById("exit-btn");
+      const exitPopup = document.getElementById("exitPopup");
+      const closePopupBtn = document.querySelector(".no-btn");
+
+      exitButton.addEventListener("click", function() {
+        exitPopup.style.display = "block";
+      });
+
+      closePopupBtn.addEventListener("click", function() {
+        exitPopup.style.display = "none";
+      });
+
+    </script>
+
+</body>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</html>
