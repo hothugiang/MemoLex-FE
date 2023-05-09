@@ -1661,7 +1661,65 @@ input[type="checkbox"] {
   font-weight: 600;
 }
 
+/*--------------------------------------------------------------
+# COMMUNITY
+--------------------------------------------------------------*/
+.user_streak {
+  margin-left: 50px;
+  margin-right: 50px;
+  display: flex;
+  align-items: center;
+}
+.ava img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.infor {
+  margin-left:50px;
+  margin-right:50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 
+.infor h5 {
+  font-size: 20px;
+}
+
+.infor p {
+  font-size: 20px;
+}
+
+.infor .bi-award-fill {
+  color: #f7d02c;
+  padding-bottom: 10px;
+}
+
+.infor .bi-fire {
+  color: #f76c6c
+}
+
+.public_wordpack {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.public_wordpack .card{
+  text-align: center;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  margin-right:10px;
+  padding: 10px;
+}
+
+.public_wordpack .card:hover {
+  scale: 1.05;
+  border: 2px solid rgba(127, 137, 161, 0.5)
+}
 
 
 
