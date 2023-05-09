@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>My lists</title>
+  <title>Word</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -17,7 +17,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
   <link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css'>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-+e1E4B4zPYXXZG9c9+z4BjSvUUvIr8hIP4bAXwjYKwPU6O+uV7xPJ6eXU6aJLr+2Iy7dD5a5N5OT5lqM3G+H3A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -84,98 +83,62 @@
 
     </div>
   </header><!-- End Header -->
-    <!-- End Header -->
+  <!-- End Header -->
 
   <main id="main">
-    <!-- ======= Breadcrumbs ======= -->
-    <section id="word-detail" class="word-detail" style="padding-bottom: 30px;">
-      <div class="wrapper">
-          <div class="user_streak">
-              <div class="ava"><img src="assets/img/logo edit.png"></div>
-              <div class="infor">
-                  <h1 style="padding-top: 10px;">Username</h1>
-                  <p style="font-style: italic; margin-bottom: 10px;"> Bio </p>
-                  <h5> Score: </h5>
-                  <div class="award" style="display: flex;"> 
-                      <h5><i class="bi bi-fire"></i> Streak: </h5>
-                      <h5 style="margin-left: 200px;"> <i class="bi bi-award-fill"></i> Rank: </h5>
-                  </div>
-              </div>
-          </div>
-    
-        </div>
-    </section><!-- User detail -->
-
-    <section id="listword" class="listword" style="padding-top: 0;">
-      <div class="container text-center">
-          <h1 style="text-align: center; margin-bottom: 20px;">My word lists</h1>
-          
-          <div class="taskbar">
-              <button class="trash-icon"><i class="fa fa-trash"></i></button>
-
-              <i class="bi bi-three-dots-vertical"></i>
-
-              <select class="public-private">
-                <option value="" disabled selected>Privacy</option>
-                <option value="public">Public</option>
-                <option value="private">Private</option>
-              </select>
-
-              <i class="bi bi-three-dots-vertical"></i>
-
-              <input type="date" class="date-picker">
-
-              <i class="bi bi-three-dots-vertical"></i>
-
-              <select class="sort-mode">
-                <option value="" disabled selected>Sort</option>
-                <option value="created_date">Date</option>
-                <option value="rating">Rating</option>
-              </select>
-
-              <i class="bi bi-three-dots-vertical"></i>
-
-              <button class="create-btn" onclick="window.location.href='listword.html'">Create new list</button>
-          </div>
-
-        <br>
-
-        <!--Blocks of lists-->
-
-        <section id="lists" class="topics pt-0">
-          <div class="container" data-aos="fade-up">
-
-            <div class="row gy-4">
-              <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="card">
-                  <div class = "delete">
-                    <i class="fas fa-trash"></i>
-                  </div>
-                  <h3><a href="userpackagedetail.html" class="stretched-link">List 1</a></h3>
-                  <h6>Description</h6>
-
-                  <div class="rating">
-                    <span class="star fas fa-star"></span>
-                    <span class="star fas fa-star"></span>
-                    <span class="star fas fa-star"></span>
-                  </div>
-
-                  
-                  <button class="right-btn" onclick="window.location.href='quizz.html'">Review</button>
-
-                </div>                
-                
-              </div><!-- End Card Item -->
-
+    <!-- ======= Word detail ======= -->
+    <section id="word-detail" class="word-detail">
+        <div class="wrapper">
+            <div class="user_streak">
+                <div class="ava"><img src="assets/img/logo edit.png"></div>
+                <div class="infor">
+                    <h1 style="padding-top: 10px;">Username</h1>
+                    <p style="font-style: italic; margin-bottom: 10px;"> Bio </p>
+                    <h5> Score: </h5>
+                    <div class="award" style="display: flex;"> 
+                        <h5><i class="bi bi-fire"></i> Streak: </h5>
+                        <h5 style="margin-left: 200px;"> <i class="bi bi-award-fill"></i> Rank: </h5>
+                    </div>
+                </div>
             </div>
+
+            <h1 style="text-align: center;">Ranking table</h1>
+          <!--- Meaning table-->
+          <div class="word-infor" id="word-infor">
+            <table class="table-fill" style="margin-bottom: 30px; width: 75%;">
+                <colgroup>
+                    <col width="100" >
+                    <col width="400" >
+                    <col width="100" >
+                </colgroup>
+                    
+                <thead> 
+                    <tr>
+                    <th class="text-center"><i class="bi bi-award-fill" style="color: #f7d02c;"></i></th>
+                    <th class="text-left">User</th>
+                    <th class="text-left">Mark</th>
+                    </tr>
+                </thead>
+        
+                <tbody class="table-hover">
+                    <tr onclick="location.href='mylist.html'">
+                        <td class="text-center">1</td>
+                        <td class="text-left">
+                            <p><img src="assets/img/logo edit.png" style="width:30px; height:30px; margin-right:10px;"> Username</p>
+                        </td>
+                        <td class="text-left">100</td>
+                    </tr>
+                
+                </tbody>
+            </table>
+          </div>
             
 
-          </div>
-        </section><!-- End Topics Section -->
+       </div>
           
-        
-      </div>
-    </section><!-- End Breadcrumbs -->
+
+
+    </section><!-- Word detail -->
   </main>
 
     
@@ -246,4 +209,6 @@
     <script src="assets/js/main.js"></script>
 
 </body>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </html>
